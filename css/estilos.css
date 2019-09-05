@@ -1,0 +1,344 @@
+body
+{
+  font-family: 'Abel', sans-serif;
+  margin:0px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+}
+
+h1
+{
+  font-size: 30px;
+  margin: 0px;
+  color:white;
+}
+
+h1 strong
+{
+  color: #026fff;
+}
+
+h2
+{
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.header
+{
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.header a
+{
+  display:flex;
+  padding: 0px 5px;
+  align-items: center;
+  height: inherit;
+  font-family: 'Titillium Web', sans-serif;
+  color:inherit;
+  text-decoration: none; 
+}
+
+.header ol
+{
+  display:flex;
+  height: inherit;
+}
+
+.menu
+{
+  height: inherit;
+}
+
+.menu ol li
+{
+  list-style: none;
+  height: inherit;
+}
+
+.logo
+{
+  padding: 10px;
+}
+
+figure, nav, ol, li
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero
+{
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+
+
+.hero-image
+
+{
+  padding-right: 200px;
+  object-fit: cover;
+}
+
+
+.portfolio
+{
+  background: #fafafa;
+  padding: 20px;
+}
+
+.portfolio h2
+{
+  margin:0px;
+   
+}
+
+.project
+{
+  font-family: 'Titillium Web', sans-serif;
+  background: white;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  ;
+}
+.project-subtitle, .project-date, .project-url
+{
+  font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0px ;
+}
+
+.project-description
+{
+  font-size: 20px;
+}
+
+.project strong
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-title
+{
+  font-size: 30px;
+  font-family:'Abel', sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.project-details
+{
+  width:500px;
+}
+
+.project-imageContainer
+{
+  width: 300px;
+}
+
+.canal-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.canal-list-title {
+  margin-left: 20px;
+}
+.canal { 
+  margin: 10px;
+  width: 450px;
+  flex-shrink: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.canal img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+}
+.canal-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.canal-description {
+  text-align: center;
+}
+
+.canal-url {
+  color: #056fff;
+  font-weight: bold;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact
+{
+  background-color: #056fff;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-email
+{
+  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.form-email input
+{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/mail.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.redes-link
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.redes-link.github 
+{
+  background-image: url('../images/github.svg');
+}
+
+.redes-link.linkedin 
+{
+  background-image: url('../images/_linkedin.svg');
+}
+.redes-link.facebook 
+{
+  background-image: url('../images/facebook.svg');
+}
+
+.redes-link.instagram 
+{
+  background-image: url('../images/instagram.svg');
+}
+
+.redes-link.twitter
+{
+  background-image: url('../images/twitter.svg');
+}
+
+.redes-link.youtube
+{
+  background-image: url('../images/youtube.png');
+}
+
+.footer
+{
+  font-family: 'Abel', sans-serif;
+  color:white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img
+{
+  vertical-align: middle;
+}
+
+.footer a
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+.personal
+{
+  margin:30px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  height:200px;
+}
+
+.personal-title
+{
+  width: 300px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.personal-description
+{
+  width: 600px;
+  margin:0px;
+  font-size: 20px;
+  display: inline;
+  text-align: justify;
+}
+
+.personal-imageContainer
+{
+  width: 300px;
+}
+
+.personal-image
+{
+  width:150px;
+  height: 150px;
+  border:2px solid gray;
+  border-radius: 100%;
+  
+}
