@@ -1,3 +1,93 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fr0ju3');
+  src:  url('../fonts/icomoon.eot?fr0ju3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fr0ju3') format('truetype'),
+    url('../fonts/icomoon.woff?fr0ju3') format('woff'),
+    url('../fonts/icomoon.svg?fr0ju3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social:before {
+  content: "\e901";
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-brand1:before {
+  content: "\e902";
+}
+.icon-octacat:before {
+  content: "\e902";
+}
+.icon-social1:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e903";
+}
+.icon-brand2:before {
+  content: "\e903";
+}
+.icon-social2:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e904";
+}
+.icon-brand3:before {
+  content: "\e904";
+}
+.icon-tweet:before {
+  content: "\e904";
+}
+.icon-social3:before {
+  content: "\e904";
+}
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-brand4:before {
+  content: "\e905";
+}
+.icon-social4:before {
+  content: "\e905";
+}
+.icon-facebook:before {
+  content: "\e906";
+}
+.icon-brand5:before {
+  content: "\e906";
+}
+.icon-social5:before {
+  content: "\e906";
+}
+.icon-menu:before {
+  content: "\e900";
+}
+
+.icon-in:before {
+  content: "\e901";
+}
+
+
 body
 {
   font-family: 'Abel', sans-serif;
@@ -12,7 +102,7 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-  font-size: 30px;
+  font-size: 2em;
   margin: 0px;
   color:white;
 }
@@ -27,8 +117,8 @@ h2
   color:#026fff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 40px;
+  font-size: 1.6em;
+  margin-bottom: 2.5em;
 }
 
 .header
@@ -39,6 +129,7 @@ h2
   background-color: black;
   color: white;
   font-family: 'Titillium Web', sans-serif;
+  flex-wrap: wrap;
 }
 
 .header a
@@ -71,7 +162,7 @@ h2
 
 .logo
 {
-  padding: 10px;
+  padding: 5px;
 }
 
 figure, nav, ol, li
@@ -88,6 +179,7 @@ figure, nav, ol, li
   align-items: center;
   background-color: black;
   color:white;
+  flex-wrap: wrap;
 }
 
 
@@ -123,19 +215,20 @@ figure, nav, ol, li
   padding:20px;
   margin-top: 20px;
   margin-bottom: 5px;
-  ;
+  flex-wrap:wrap;
 }
 .project-subtitle, .project-date, .project-url
 {
   font-family: 'Abel', sans-serif;
-  font-size: 14px;
+  font-size: 1.1em;
   font-weight: bold;
-  margin: 10px 0px ;
+  margin: 10px 0px 0px 6px;
 }
 
 .project-description
 {
-  font-size: 20px;
+  font-size: 1.1em;
+  margin: 10px 0px 0px 6px;
 }
 
 .project strong
@@ -145,21 +238,31 @@ figure, nav, ol, li
 
 .project-title
 {
-  font-size: 30px;
+  font-size: 2.4em;
+  margin: 5px;
   font-family:'Abel', sans-serif;
   font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 10px;
 }
 
 .project-details
 {
-  width:500px;
+  width:50%;
 }
 
 .project-imageContainer
 {
-  width: 300px;
+  width: 50%;
+  text-align: right;
+}
+
+.project-imageContainer img
+{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.project-url a
+{
+  color:blue;
 }
 
 .canal-list {
@@ -170,8 +273,8 @@ figure, nav, ol, li
   margin-left: 20px;
 }
 .canal { 
-  margin: 10px;
-  width: 450px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0px;
   border-radius: 10px;
   overflow: hidden;
@@ -211,6 +314,7 @@ figure, nav, ol, li
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-email
@@ -253,12 +357,12 @@ figure, nav, ol, li
 
 .redes-link.github 
 {
-  background-image: url('../images/github.svg');
+  background-image: url('../images/__github.svg');
 }
 
 .redes-link.linkedin 
 {
-  background-image: url('../images/_linkedin.svg');
+  background-image: url('../images/linkedin.png');
 }
 .redes-link.facebook 
 {
@@ -288,6 +392,7 @@ figure, nav, ol, li
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer img
@@ -322,10 +427,11 @@ figure, nav, ol, li
 
 .personal-description
 {
-  width: 600px;
-  margin:0px;
-  font-size: 20px;
-  display: inline;
+  width: 100%;
+  margin:0em 1em;
+  font-size: 1.5em;
+  padding-bottom: auto;
+  /* display: inline */
   text-align: justify;
 }
 
@@ -336,9 +442,380 @@ figure, nav, ol, li
 
 .personal-image
 {
-  width:150px;
-  height: 150px;
+  width: 70%;;
+  /* height: 150px; */
   border:2px solid gray;
   border-radius: 100%;
   
 }
+
+.container
+{
+  max-width: 1000px;
+  flex:1;
+  margin: 0 auto;
+  height: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  display: inherit;
+  flex-wrap: inherit;
+}
+
+.html-video
+{
+  width: 100%;
+  height:auto;
+}
+.youtube-video
+{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  z-index:1;
+}
+.flexible-video
+{
+  width:100%;
+  height:0px;
+  padding-top:56.25%;
+  background:blue;
+  position:relative;
+}
+
+.burger-button
+{
+  width:40px;
+  height:40px;
+  background-color:rgba(0, 0, 0, .6);
+  display:none;
+  line-height:40px;
+  text-align: center;
+  color:white;
+  font-size: 1.18em;
+  border-radius: 50%;
+  position:fixed;
+  top:5px;
+  left:5px;
+  z-index:4;
+}
+
+.icon-in, .icon-facebook, .icon-twitter, .icon-github, .icon-instagram, .icon-youtube
+{
+font-size: 2.2em;
+text-decoration: none;
+margin-right:.4em;
+color:white;
+}
+@media screen and (max-width:1024px)
+{
+  .hero
+  {
+    height:auto;
+    position:relative;
+    overflow:hidden;
+    padding:1em;
+  }
+  .hero-image
+  {
+    position:absolute;
+    z-index:0;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    width:100%;
+  }
+  h1
+  {
+    z-index:1;
+    /* top:0px;
+    left:0px; */
+  }
+  .container
+  {
+    padding: 0em .9em;
+  }
+  .personal
+  {
+    max-width: 1000px;
+    width:90%;
+  }
+}
+
+
+@media screen and (max-width:778px)
+{
+
+  h1
+  {
+    font-size: 1.5em;
+    padding-right:2em;
+  }
+  .project-details
+  {
+    width:50%;
+  }
+  .canal img
+  {
+    width:100%;
+  }
+  .personal
+  {
+    width:80%;
+    height: auto;
+  }
+  .personal-description
+  {
+    font-size: 1.5em;
+  }
+  h2
+{
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 2.3em;
+}
+.project-title
+{
+  font-size: 1.9em;
+  margin: 5px;
+  font-family:'Abel', sans-serif;
+  font-weight: bold;
+}
+.project-subtitle, .project-date, .project-url
+{
+  font-family: 'Abel', sans-serif;
+  font-size: .85em;
+  font-weight: bold;
+  margin: 10px 0px 0px 6px;
+}
+.project-description
+{
+  font-size: .85em;
+  margin: 10px 0px 0px 6px;
+}
+.icon-in, .icon-facebook, .icon-twitter, .icon-github, .icon-instagram, .icon-youtube
+{
+font-size: 2em;
+text-decoration: none;
+margin-right:.4em;
+color:white;
+}
+}
+
+@media screen and (max-width:479px)
+{
+  .burger-button
+  {
+    display:block;
+  }
+  h1
+  {
+    font-size: 1em;
+    margin-right:15em;
+  }
+  .header
+  {
+    display: block;
+    height: auto;
+  }
+  .header ol
+  {
+    display: block;
+  }
+  .header ol li
+  {
+    height: 40px;
+  }
+  .header a
+  {
+    justify-content: center;
+  }
+  .header .logo
+  {
+    text-align: center;
+  }
+  .project
+  {
+    display:block;
+  }
+  .project-imageContainer
+  {
+    width:auto;
+    text-align: center;
+  }
+  .project-details
+  {
+    width:auto;
+  }
+  .project-title
+  {
+    font-size: 1.5em;
+    margin: 5px;
+    font-family:'Abel', sans-serif;
+    font-weight: bold;
+  }
+  .project-subtitle, .project-date, .project-url
+  {
+    font-family: 'Abel', sans-serif;
+    font-size: .8em;
+    font-weight: bold;
+    margin: 10px 0px 0px 6px;
+  }
+  .project-description
+  {
+    font-size: .8em;
+    margin: 10px 0px 5px 6px;
+  }
+  .canal
+  {
+    width:auto;
+  }
+  .personal
+  {
+    width:80%;
+    height: auto;
+  }
+  .personal-description
+  {
+    font-size: .8em;
+  }
+  .contact
+  {
+    height: auto;
+    padding:1.5em 0em;
+    text-align: center;
+    display:block;
+  }
+  .form-email button
+  {
+    margin: 1em auto;
+  }
+  .form-email h3
+  {
+    margin-top: 0;
+  }
+  h2
+  {
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 2.1em;
+  }
+  .icon-in, .icon-facebook, .icon-twitter, .icon-github, .icon-instagram, .icon-youtube
+  {
+  font-size: 1.9em;
+  text-decoration: none;
+  margin-right:.4em;
+  color:white;
+  }
+  .menu
+  {
+    position:fixed;
+    z-index:2;
+    top:0;
+    left:-100vw;
+    width:100vw;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(2,111,255,.9);
+    transition:.3s;
+  }
+
+  .menu.is-active
+  {
+    left:0;
+  }
+  .header a
+  {
+  font-size:1.5em;
+  text-decoration: underline; 
+  }
+}
+
+@media screen and (max-width:320px)
+{
+  .project-details
+  {
+    width:auto;
+  }
+
+  .project img
+  {
+    width:50%;
+    height: 50%;
+  }
+  .canal-detail
+  {
+    margin: -2.5em .5em .5em;
+    padding: 1em;
+  }
+  .personal
+  {
+    width:70%;
+    height: auto;
+  }
+  .personal-description
+  {
+    font-size: .6em;
+  }
+  .contact
+  {
+    height: auto;
+  }
+  .footer
+  {
+    display: block;
+    text-align: center;
+    border:1px solid transparent;
+  }
+  h2
+  {
+  color:#026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9em;
+  margin-bottom: 1.8em;
+  }
+  .project-title
+  {
+  font-size: 1em;
+  margin: 5px;
+  font-family:'Abel', sans-serif;
+  font-weight: bold;
+  }
+  .project-subtitle, .project-date, .project-url
+  {
+  font-family: 'Abel', sans-serif;
+  font-size: .6em;
+  font-weight: bold;
+  margin: 10px 0px 0px 6px;
+  }
+  .project-description
+  {
+  font-size: .6em;
+  margin: 10px 0px 5px 6px;
+  }
+  .icon-in, .icon-facebook, .icon-twitter, .icon-github, .icon-instagram, .icon-youtube
+{
+font-size: 1.7em;
+text-decoration: none;
+margin-right:.4em;
+color:white;
+}
+.header a
+{
+font-size:1.2em;
+text-decoration: underline; 
+}
+}
+
+

@@ -2,163 +2,236 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bienvenidos a mi Portafolio</title>
     <link rel="icon" type="image/png" href="images/icono.png" />
     <link href="https://fonts.googleapis.com/css?family=Abel|Roboto:400,400i,700|Titillium+Web:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"> 
   </head>
   <body>
-    <!--Esta es la cabecera y menu de navegacion del sitio-->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
-      <figure class="logo">
-        <img src="./images/marvel.png" width="150px"alt="Logo de Marvel"/>
-      </figure>
-      <nav class="menu">
-        <ol>
-          <li>
-            <a class="link" href="#portafolio">Portafolio</a>
-          </li>
-          <li>
-            <a class="link" href="#canalyoutube">Canal</a>
-          </li>
-          <li>
-            <a class="link" href="#interespersonal">Acerca de Mi</a>
-          </li>
-        </ol>
-      </nav>
+      <div class="container">
+        <figure class="logo">
+          <img id="home" src="./images/marvel.png" width="150px"alt="Logo de Marvel"/>
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#canalyoutube">Canal</a>
+            </li>
+            <li>
+              <a class="link" href="#interespersonal">Acerca de Mi</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
     </header>
-    <!--Aqui inicia el cuerpo del sitio donde se detalla la informacion a mostrar-->
     <section class="hero">
+      <div class="container">
         <h1>
           Hola Soy <strong>Jorge Luis Montes Castro</strong><br />estudiante de <strong>Platzi</strong><br /> futuro desarrollador<strong> Full Stack.</strong></h1>
-        <img class="hero-image" src="./images/imim.jpg"width="200px" alt="Me"/>  
+        <img class="hero-image" src="./images/Iron_Man.jpg"width="200px" alt="Me"/>  
+      </div>
     </section>
     <section id="portafolio" class="portfolio">
-      <h2>Portafolio (Proyectos realizados)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Primera aplicaci&oacute;n Android.
-          </h3>
-          <h6 class="project-subtitle">Hecha en Java Nativo y Kotlin.</h6>
-          <p class="project-date"><small><strong>Fecha: </strong> 01/09/2019</small></p>
-          <p class="project-url"><small><strong>Puedes encontrarla en: </strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> Hello World Android</a>.</small></p>
-          <p class="project-description">Aplicaci&oacute;n de preguntas y respuestas.</p>        
-        </div>
-        <figure class="project-imageContainer">
-            <img class="project-image" width="300px" src="./images/android.png" alt="Android Logo" />
-        </figure>
-      </article>
-      <article class="project">
+      <div class="container">
+        <h2>Portafolio (Proyectos realizados)</h2>
+        <article class="project">
           <div class="project-details">
-            <h3 class="project-title">Primera aplicaci&oacute;n en IOS.</h3>
-            <h6 class="project-subtitle">Hecha en Swift y Objective-C.</h6>
+            <h3 class="project-title">Primera aplicaci&oacute;n Android.
+            </h3>
+            <h6 class="project-subtitle">Hecha en Java Nativo y Kotlin.</h6>
             <p class="project-date"><small><strong>Fecha: </strong> 01/09/2019</small></p>
-            <p class="project-url"><small><strong>Puedes encontrarla en:</strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> Hello World IOS</a></small></p>
-            <p class="project-description">Aplicaci&oacute;n de red social.</p>        
+            <p class="project-url"><small><strong>Puedes encontrarla en: </strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> Hello World Android</a>.</small></p>
+            <p class="project-description">Aplicaci&oacute;n de preguntas y respuestas.</p>        
           </div>
           <figure class="project-imageContainer">
-              <img class="project-image" height="200px" src="./images/ios.png" alt="IOS Logo" />
+              <img class="project-image" width="500px" src="./images/android.png" alt="Android Logo" />
           </figure>
         </article>
         <article class="project">
             <div class="project-details">
-              <h3 class="project-title">Primer videojuego 2d.</h3>
-              <h6 class="project-subtitle">Hecha en Javascript y C#.</h6>
-              <p class="project-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
-              <p class="project-url"><small><strong>Puedes encontrarla en:</strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> First Game 2D</a></small></p>
-              <p class="project-description">Videojuego de plataforma.</p>        
+              <h3 class="project-title">Primera aplicaci&oacute;n en IOS.</h3>
+              <h6 class="project-subtitle">Hecha en Swift y Objective-C.</h6>
+              <p class="project-date"><small><strong>Fecha: </strong> 01/09/2019</small></p>
+              <p class="project-url"><small><strong>Puedes encontrarla en:</strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> Hello World IOS</a></small></p>
+              <p class="project-description">Aplicaci&oacute;n de red social.</p>        
             </div>
             <figure class="project-imageContainer">
-                <img class="project-image" width="300px" src="./images/videogame2d.jpg" alt="Video Game 2D">
+              <img class="project-image" height="300px" src="./images/ios.png" alt="IOS Logo" />
             </figure>
           </article>
           <article class="project">
               <div class="project-details">
-                <h3 class="project-title">Primer videojuego 3d en Unity.</h3>
-                <h6 class="project-subtitle">Hecha en Unity.</h6>
+                <h3 class="project-title">Primer videojuego 2d.</h3>
+                <h6 class="project-subtitle">Hecha en Javascript y C#.</h6>
                 <p class="project-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
-                <p class="project-url"><small><strong>Puedes encontrarla en:</strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> First Game 3D</a></small></p>
-                <p class="project-description">Videojuego first person shooter.</p>        
+                <p class="project-url"><small><strong>Puedes encontrarla en:</strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> First Game 2D</a></small></p>
+                <p class="project-description">Videojuego de plataforma.</p>        
               </div>
               <figure class="project-imageContainer">
-                  <img class="project-image" width="300px" src="./images/videogame3d.jpg" alt="Video Game 3D">
+                  <img class="project-image" width="400px" src="./images/videogame2d.jpg" alt="Video Game 2D">
               </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                  <h3 class="project-title">Primer videojuego 3d en Unity.</h3>
+                  <h6 class="project-subtitle">Hecho en Unity.</h6>
+                  <p class="project-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
+                  <p class="project-url"><small><strong>Puedes encontrarla en:</strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> First Game 3D</a></small></p>
+                  <p class="project-description">Videojuego first person shooter.</p>        
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="400px" src="./images/videogame3d.jpg" alt="Video Game 3D">
+                </figure>
+            </article>
+      </div>
+    </section>
+      <div class="container">
+        <h2 id="canalyoutube" class="canal-list-title">Videos de mi Canal de Youtube Universo Geek Peru</h2>
+      </div>
+    <section id="channel" class="canal-list">
+        <div class="container">
+          <article class="canal">
+            <figure class="canal-imageContainer">
+              <img class="canal-image" src="images/posterendgame.jpg" width="500px" alt="Poster Avengers Edgame"/>
+            </figure>
+            <div class="canal-detail">
+              <h3 class="canal-title">Estreno en Per&uacute; Avengers Endgame</h3>
+              <p class="canal-description">Visitando Cineplanet de Molina Plaza para ver el estreno de Avengers Endgame. </p>
+              <a class="canal-url" href="https://www.youtube.com/watch?v=wEmcHtSlP8U" target="_blank">Ver Video</a>
+            </div>
           </article>
+          <article class="canal">
+            <figure class="canal-imageContainer">
+              <img class="canal-image" src="./images/capitanamarvel2.jpg" width="500px" alt="Poster Capitana Marvel" />
+            </figure>
+            <div class="canal-detail">
+              <h3 class="canal-title">Estreno en Per&uacute; de Capitana Marvel</h3>
+              <p class="canal-description">Visitando Cineplanet de Molina Plaza para ver el estreno de Capitana Marvel</p>
+              <a class="canal-url" href="https://www.youtube.com/watch?v=tl3l0qgDMCg" target="_blank">Ver Video</a>
+            </div>
+          </article>
+          <article class="canal">
+            <figure class="canal-imageContainer">
+              <img class="canal-image" src="./images/heroe.jpg" width="500px" alt="Last Trailer Avengers Endgame" />
+            </figure>
+            <div class="canal-detail">
+              <h3 class="canal-title">&Uacute;ltimo Trailer Avengers Endgame previo al estreno</h3>
+              <p class="canal-description">A solo 10 d&iacute;as del estreno</p>
+              <a class="canal-url" href="https://youtu.be/Ea9RWQ1fBK4" target="_blank">Ver Video</a>
+            </div>
+          </article>
+          <article class="canal">
+            <figure class="canal-imageContainer">
+              <video class="html-video" src="./videos/trailer_aiw.mp4" width="1280px" height="720px" controls></video>
+              <!-- <img class="canal-image" src="./images/heroe.jpg" width="500px" alt="Last Trailer Avengers Endgame" /> -->
+            </figure>
+            <div class="canal-detail">
+              <h3 class="canal-title">&Uacute;ltimo Trailer Avengers Endgame previo al estreno</h3>
+              <p class="canal-description">A solo 10 d&iacute;as del estreno</p>
+              <a class="canal-url" href="https://youtu.be/hFFZ7yZIDXA" target="_blank">Ver Video</a>
+            </div>
+          </article>
+          <article class="canal">
+            <figure class="canal-imageContainer">
+                <div class="flexible-video">
+                    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/fFzI8DrXuuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              <!-- <img class="canal-image" src="./images/heroe.jpg" width="500px" alt="Last Trailer Avengers Endgame" /> -->
+            </figure>
+            <div class="canal-detail">
+              <h3 class="canal-title">Trailer Avengers Endgame Espa&ntilde;ol Latino</h3>
+              <p class="canal-description">A d&iacute;as del estreno</p>
+              <a class="canal-url" href="https://youtu.be/fFzI8DrXuuE" target="_blank">Ver Video</a>
+            </div>
+          </article>
+          </div>
     </section>
-<!-- Aqui incia la seccion videos del canal-->
-    <h2 id="canalyoutube" class="canal-list-title">Videos de mi Canal de Youtube Universo Geek Peru</h2>
-  <section id="channel" class="canal-list">
-      <article class="canal">
-        <figure class="canal-imageContainer">
-          <img class="canal-image" src="images/posterendgame.jpg" width="300px" alt="Poster Avengers Edgame"/>
-        </figure>
-        <div class="canal-detail">
-          <h3 class="canal-title">Estreno en Per&uacute; Avengers Endgame</h3>
-          <p class="canal-description">Visitando Cineplanet de Molina Plaza para ver el estreno de Avengers Endgame. </p>
-          <a class="canal-url" href="https://www.youtube.com/watch?v=wEmcHtSlP8U" target="_blank">Ver Video</a>
-        </div>
-      </article>
-      <article class="canal">
-        <figure class="canal-imageContainer">
-          <img class="canal-image" src="./images/capitanamarvel2.jpg" width="500px" alt="Poster Capitana Marvel" />
-        </figure>
-        <div class="canal-detail">
-          <h3 class="canal-title">Estreno en Per&uacute; de Capitana Marvel</h3>
-          <p class="canal-description">Visitando Cineplanet de Molina Plaza para ver el estreno de Capitana Marvel</p>
-          <a class="canal-url" href="https://www.youtube.com/watch?v=tl3l0qgDMCg" target="_blank">Ver Video</a>
-        </div>
-      </article>
-      <article class="canal">
-        <figure class="canal-imageContainer">
-          <img class="canal-image" src="./images/heroe.jpg" width="800px" alt="Last Trailer Avengers Endgame" />
-        </figure>
-        <div class="canal-detail">
-          <h3 class="canal-title">&Uacute;ltimo Trailer Avengers Endgame previo al estreno</h3>
-          <p class="canal-description">A solo 10 d&iacute;as del estreno</p>
-          <a class="canal-url" href="https://youtu.be/Ea9RWQ1fBK4" target="_blank">Ver Video</a>
-        </div>
-      </article>
-  </section>
-
-  <!-- Aqui empieza la seccion de About me-->
-
     <section id="interespersonal" class="personal-list">
-      <h2 class="personal-title">Acerca de m&iacute;</h2>
-      <article class="personal">
-          <p class="personal-description"> Me llamo Jorge Luis Montes Castro soy peruano tengo 35 años, soy padre de 3 hijos, dueño de un pequeño restaurante, inform&aacute;tico de vocaci&oacute;n y amante de la tecnolog&iacute;a.</p>
-          <figure class="personal-imageContainer">
-            <img class="personal-image" src="./images/yo.png" width="300px" alt="Foto">
-          </figure>
-      </article>
-      <h2 class="personal-title">Hobbies y pasatiempos</h2>
-      <article class="personal">
+      <div class="container">
+        <h2 class="personal-title">Acerca de m&iacute;</h2>
+      </div>
+      <div class="container">
+        <article class="personal">
+            <p class="personal-description"> Me llamo Jorge Luis Montes Castro soy peruano tengo 35 años, soy padre de 3 hijos, dueño de un pequeño restaurante, inform&aacute;tico de vocaci&oacute;n y amante de la tecnolog&iacute;a.</p>
+            <figure class="personal-imageContainer">
+              <img class="personal-image" src="./images/yo.png" width="300px" alt="Foto">
+            </figure>
+        </article>
+        <h2 class="personal-title">Hobbies y pasatiempos</h2>
+        <article class="personal">
           <p class="personal-description">Me encanta ver pel&iacute;culas de casi todos los g&eacute;neros, fan&aacute;tico del f&uacute;tbol (verlo y jugarlo) Fan de Marvel y su espectacular Universo Cinematogr&aacute;fico. Me gustan los buenos animes, soy Gamer desde que tengo uso de raz&oacute;n y con gusto por la m&uacute;sica (excepto uno que otro g&eacute;nero).<br /> Deseo mucho aprender y desarrollarme en el mundo del diseño y desarrollo, me atrae mucho la programaci&oacute;n y el Desarrollo de p&aacute;ginas Web, de aplicaciones m&oacute;viles y la creaci&oacute;n de videojuegos.</p>
-      </article>
-    </section>
-
-    <section id="contacto" class="contact">
-          <form action="/suscripcion" class="form-email">
-            <h3>Dejame tu opini&oacute;n</h3>
-            <input type="text" placeholder="Dejanos tu email" id="email">
-            <button>Enviar</button> 
-          </form>
-        <div class="redes">
-                <a href="https://www.linkedin.com/in/jorge-luis-montes-castro-249084b6/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BZ7KN5NDPTfudEDJ5w77s7Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-identity_welcome_message" class="redes-link linkedin" target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UCoKdDCRCpbcaOX8ZA3jX4nw" class="redes-link youtube" target="_blank"></a>
-                <a href="https://github.com/jorgeluismontescastro" class="redes-link github" target="_blank"></a>
-                <a href="https://www.facebook.com/Jorge-Luis-Montes-Castro-494155851076906/?ref=bookmarks" class="redes-link facebook" target="_blank"></a>
-                <a href="https://twitter.com/albafika123" class="redes-link twitter" target="_blank"></a>
-                <a href="https://www.instagram.com/iori_yagami_2012/" class="redes-link instagram"></a>
+        </article>
         </div>
     </section>
-    <!--Aqui se ubica el footer donde se coloca los datos de de3rechos y contacto-->
-    <footer class="footer">
-      <div>
-        <p>Copyright Montes Industries © <img src="./images/marvel.png" width="100px" alt="logo empresa"></img></p>
-      </div>
-      <div>
-        <p>Design by<a href="https://twitter.com/albafika123">@albafika123</a></p>     
-      </div>
-    </footer>
+    <section id="contacto" class="contact">
+      <div class="container">
+        <form action="/suscripcion" class="form-email">
+          <h3>Dejame tu opini&oacute;n</h3>
+          <input type="text" placeholder="Dejanos tu email" id="email">
+          <button>Enviar</button> 
+        </form>
+        <div class="redes">
+                <a href="https://www.linkedin.com/in/jorge-luis-montes-castro-249084b6/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BZ7KN5NDPTfudEDJ5w77s7Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-identity_welcome_message" class="icon-in" target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UCoKdDCRCpbcaOX8ZA3jX4nw" class="icon-youtube" target="_blank"></a>
+                <a href="https://github.com/jorgeluismontescastro" class="icon-github" target="_blank"></a>
+                <a href="https://www.facebook.com/Jorge-Luis-Montes-Castro-494155851076906/?ref=bookmarks" class="icon-facebook" target="_blank"></a>
+                <a href="https://twitter.com/albafika123" class="icon-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/iori_yagami_2012/" class="icon-instagram" target="_blank"></a>
+        </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div>
+            <p>Copyright Montes Industries © <img src="./images/marvel.png" width="100px" alt="logo empresa"></img></p>
+          </div>
+          <div>
+            <p>Design by<a href="https://twitter.com/albafika123">@albafika123</a></p>     
+          </div>
+        </div>
+      </footer>
+      <script>
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+        const ipad = window.matchMedia ('screen and (max-width: 479px)');
+        
+        
+        ipad.addListener(validation);
+
+        function validation(event)
+        {
+          if (event.matches)
+          {
+            burgerButton.addEventListener('click', mostrar);    
+          }
+          else
+          {
+            burgerButton.removeEventListener('click', mostrar);
+          }
+        }
+
+        validation(ipad)
+
+        function mostrar()
+        {
+          if (menu.classList.contains('is-active'))
+            {
+              menu.classList.remove('is-active');
+            }
+          else
+            {
+              menu.classList.add('is-active');
+            }
+        }
+      </script>
   </body>
 </html>
