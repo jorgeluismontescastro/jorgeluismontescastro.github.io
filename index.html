@@ -3,60 +3,64 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bienvenidos a mi Portafolio</title>
+    <meta name="description" content="Portafolio Web Jorge Montes" />
+    <meta name="robots" content="index, follow" />
+    <title>Bienvenidos a mi Portafolio Web - Jorge Montes</title>
     <link rel="icon" type="image/png" href="https://ioriyagami2017.000webhostapp.com/images/icono.png" />
     <link href="https://fonts.googleapis.com/css?family=Abel|Roboto:400,400i,700|Titillium+Web:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"> 
   </head>
   <body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
-    <header class="header">
-      <div class="container">
+    <i class="icon-menuburger--button" id="burger-menu"></i>
+    <header class="header-main--container">
+      <div class="image-logo--container">
         <figure class="logo">
-          <img id="home" src="https://ioriyagami2017.000webhostapp.com/images/marvel.png" width="150px"alt="Logo de Marvel"/>
+          <img id="home" src="https://ioriyagami2017.000webhostapp.com/images/marvel.png" alt="Logo de Marvel"/>
         </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" href="#home">Home</a>
-            </li>
-            <li>
-              <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" href="#canalyoutube">Canal de Youtube</a>
-            </li>
-            <li>
-              <a class="link" href="#interespersonal">Acerca de Mi</a>
-            </li>
-          </ol>
-        </nav>
       </div>
+      <nav class="principal-menu--container">
+        <ol>
+          <li>
+            <a class="link" href="#portafolio">Portafolio</a>
+          </li>
+          <li>
+            <a class="link" href="#canalyoutube">Canal de Youtube</a>
+          </li>
+          <li>
+            <a class="link" href="#interespersonal">Acerca de Mi</a>
+          </li>
+          <li>
+            <a class="link" href="#trucosytips">Trucos y Tips</a>
+          </li>
+        </ol>
+      </nav>
     </header>
-    <section class="hero">
-      <div class="container">
+    <section class="hero-main--container">
+      <div class="hero">
         <h1>
-          Hola Soy <strong>Jorge Luis Montes Castro</strong><br />estudiante de <strong>Platzi</strong><br /> futuro desarrollador<strong> Full Stack.</strong></h1>
-        <img class="hero-image" src="https://ioriyagami2017.000webhostapp.com/images/Iron_Man.jpg"width="200px" alt="Me"/>  
+          Hola Soy <strong>Jorge Luis Montes Castro</strong><br />estudiante de <strong>Platzi</strong><br /> futuro desarrollador<strong> Full Stack.</strong>
+        </h1> 
       </div>
     </section>
-    <section id="portafolio" class="portfolio">
-      <div class="container">
-        <h2>Portafolio (Proyectos realizados)</h2>
-        <article class="project">
+    <section id="portafolio" class="portfolio-main--container">
+      <h2>Portafolio (Proyectos realizados)
+      </h2>
+      <div class="portfolio-container--cards">
+        <article class="project-main--container">
           <div class="project-details">
             <h3 class="project-title">Primera aplicaci&oacute;n Android.
             </h3>
-            <h6 class="project-subtitle">Hecha en Java Nativo y Kotlin.</h6>
+            <h4 class="project-subtitle">Hecha en Java Nativo y Kotlin.
+            </h4>
             <p class="project-date"><small><strong>Fecha: </strong> 01/09/2019</small></p>
             <p class="project-url"><small><strong>Puedes encontrarla en: </strong><a href="https://github.com/jorgeluismontescastro" target="_blank"> Hello World Android</a>.</small></p>
             <p class="project-description">Aplicaci&oacute;n de preguntas y respuestas.</p>        
           </div>
           <figure class="project-imageContainer">
-              <img class="project-image" width="500px" src="https://ioriyagami2017.000webhostapp.com/images/android.png" alt="Android Logo" />
+              <img class="project-image" src="https://ioriyagami2017.000webhostapp.com/images/android.png" alt="Android Logo" />
           </figure>
         </article>
-        <article class="project">
+        <article class="project-main--container">
             <div class="project-details">
               <h3 class="project-title">Primera aplicaci&oacute;n en IOS.</h3>
               <h6 class="project-subtitle">Hecha en Swift y Objective-C.</h6>
@@ -65,10 +69,10 @@
               <p class="project-description">Aplicaci&oacute;n de red social.</p>        
             </div>
             <figure class="project-imageContainer">
-              <img class="project-image" height="300px" src="https://ioriyagami2017.000webhostapp.com/images/ios.png" alt="IOS Logo" />
+              <img class="project-image" src="https://ioriyagami2017.000webhostapp.com/images/ios.png" alt="IOS Logo" />
             </figure>
           </article>
-          <article class="project">
+          <article class="project-main--container">
               <div class="project-details">
                 <h3 class="project-title">Primer videojuego 2d.</h3>
                 <h6 class="project-subtitle">Hecha en Javascript y C#.</h6>
@@ -77,10 +81,10 @@
                 <p class="project-description">Videojuego de plataforma.</p>        
               </div>
               <figure class="project-imageContainer">
-                  <img class="project-image" width="400px" src="https://ioriyagami2017.000webhostapp.com/images/videogame2d.jpg" alt="Video Game 2D">
+                  <img class="project-image" src="https://ioriyagami2017.000webhostapp.com/images/videogame2d.jpg" alt="Video Game 2D">
               </figure>
             </article>
-            <article class="project">
+            <article class="project-main--container">
                 <div class="project-details">
                   <h3 class="project-title">Primer videojuego 3d en Unity.</h3>
                   <h6 class="project-subtitle">Hecho en Unity.</h6>
@@ -89,19 +93,20 @@
                   <p class="project-description">Videojuego first person shooter.</p>        
                 </div>
                 <figure class="project-imageContainer">
-                    <img class="project-image" width="400px" src="https://ioriyagami2017.000webhostapp.com/images/videogame3d.jpg" alt="Video Game 3D">
+                    <img class="project-image" src="https://ioriyagami2017.000webhostapp.com/images/videogame3d.jpg" alt="Video Game 3D">
                 </figure>
             </article>
       </div>
     </section>
-      <div class="container">
-        <h2 id="canalyoutube" class="canal-list-title">Videos de mi Canal de Youtube Universo Geek Peru</h2>
+      <div class="channel-title--container">
+        <h2 id="canalyoutube" class="canal-list-title">Videos de mi Canal de Youtube Universo Geek Peru
+        </h2>
       </div>
-    <section id="channel" class="canal-list">
+    <section id="channel" class="main-channel--container">
         <div class="container">
           <article class="canal">
             <figure class="canal-imageContainer">
-              <img class="canal-image" src="https://ioriyagami2017.000webhostapp.com/images/posterendgame.jpg" width="500px" alt="Poster Avengers Edgame"/>
+              <img class="canal-image" src="https://ioriyagami2017.000webhostapp.com/images/posterendgame.jpg" alt="Poster Avengers Edgame"/>
             </figure>
             <div class="canal-detail">
               <h3 class="canal-title">Estreno en Per&uacute; Avengers Endgame</h3>
@@ -111,7 +116,7 @@
           </article>
           <article class="canal">
             <figure class="canal-imageContainer">
-              <img class="canal-image" src="https://ioriyagami2017.000webhostapp.com/images/capitanamarvel2.jpg" width="500px" alt="Poster Capitana Marvel" />
+              <img class="canal-image" src="https://ioriyagami2017.000webhostapp.com/images/capitanamarvel2.jpg" alt="Poster Capitana Marvel" />
             </figure>
             <div class="canal-detail">
               <h3 class="canal-title">Estreno en Per&uacute; de Capitana Marvel</h3>
@@ -121,7 +126,7 @@
           </article>
           <article class="canal">
             <figure class="canal-imageContainer">
-              <img class="canal-image" src="https://ioriyagami2017.000webhostapp.com/images/heroe.jpg" width="500px" alt="Last Trailer Avengers Endgame" />
+              <img class="canal-image" src="https://ioriyagami2017.000webhostapp.com/images/heroe.jpg" alt="Last Trailer Avengers Endgame" />
             </figure>
             <div class="canal-detail">
               <h3 class="canal-title">&Uacute;ltimo Trailer Avengers Endgame previo al estreno</h3>
@@ -163,7 +168,7 @@
         <article class="personal">
             <p class="personal-description"> Me llamo Jorge Luis Montes Castro soy peruano tengo 35 años, soy padre de 3 hijos, dueño de un pequeño restaurante, inform&aacute;tico de vocaci&oacute;n y amante de la tecnolog&iacute;a.</p>
             <figure class="personal-imageContainer">
-              <img class="personal-image" src="https://ioriyagami2017.000webhostapp.com/images/yo.png" width="300px" alt="Foto">
+              <img class="personal-image" src="https://ioriyagami2017.000webhostapp.com/images/yo.png" alt="Foto">
             </figure>
         </article>
         <h2 class="personal-title">Hobbies y pasatiempos</h2>
@@ -172,8 +177,8 @@
         </article>
         </div>
     </section>
-    <section id="contacto" class="contact">
-      <div class="container">
+    <main id="contacto" class="contact">
+      <class class="container">
         <form action="/suscripcion" class="form-email">
           <h3>Dejame tu opini&oacute;n</h3>
           <input type="text" placeholder="Dejanos tu email" id="email">
@@ -187,12 +192,12 @@
                 <a href="https://twitter.com/albafika123" class="icon-twitter" target="_blank"></a>
                 <a href="https://www.instagram.com/iori_yagami_2012/" class="icon-instagram" target="_blank"></a>
         </div>
-        </div>
-      </section>
+       </class>
+      </main>
       <footer class="footer">
         <div class="container">
           <div>
-            <p>Copyright Montes Industries © <img src="https://ioriyagami2017.000webhostapp.com/images/marvel.png" width="100px" alt="logo empresa"></img></p>
+            <p>Copyright Montes Industries © <img src="https://ioriyagami2017.000webhostapp.com/images/marvel.png" alt="logo empresa"></img></p>
           </div>
           <div>
             <p>Design by<a href="https://twitter.com/albafika123">@albafika123</a></p>     
@@ -200,7 +205,17 @@
         </div>
       </footer>
       <script>
-        const menu = document.querySelector('.menu');
+      var txt=" Bienvenidos a mi Portafolio Web - Jorge Montes - ";
+      var espera=200;
+      var refresco=null;
+          function rotulo_title() {
+                  document.title=txt;
+                  txt=txt.substring(1,txt.length)+txt.charAt(0);
+                  refresco=setTimeout("rotulo_title()",espera);}
+          rotulo_title();
+
+
+        const menu = document.querySelector('icon-menuburger--button');
         const burgerButton = document.querySelector('#burger-menu');
         const ipad = window.matchMedia ('screen and (max-width: 479px)');
         
